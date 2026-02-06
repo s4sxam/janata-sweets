@@ -1,14 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Janata Mistanna Bhandar | Habra's Finest Since 1968</title>
+    
+    <!-- Fonts and Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Internal CSS (No need for external index.css file now) -->
     <style>
       :root {
         --saffron: #E85D04;
@@ -19,6 +22,7 @@
         font-family: 'Lato', sans-serif;
         background-color: var(--cream);
         color: #1a1a1a;
+        margin: 0;
       }
       h1, h2, h3, h4, .font-serif {
         font-family: 'Playfair Display', serif;
@@ -85,21 +89,12 @@
       .text-saffron { color: #E85D04; }
       .border-saffron { border-color: #E85D04; }
     </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@^19.2.4",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-        "react/": "https://esm.sh/react@^19.2.4/",
-        "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
-      }
-    }
-    </script>
-    <script type="module" src="./index.tsx"></script>
-  <link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body>
+    <!-- Root element where React will load -->
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+
+    <!-- Main Logic Script -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
